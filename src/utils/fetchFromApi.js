@@ -4,7 +4,7 @@ const BASE_URL = "https://movies-api14.p.rapidapi.com";
 const options = {
 	method: "GET",
 	headers: {
-		"X-RapidAPI-Key": "34adb3cd23msh7622a6b5e50cc10p1cc2dejsnce686405399a",
+		"X-RapidAPI-Key": "bfaee7d883mshb2114ef5350b018p1978ddjsneef119ed3fe5",
 		"X-RapidAPI-Host": "movies-api14.p.rapidapi.com",
 	},
 };
