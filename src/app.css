@@ -1,0 +1,18 @@
+:root {
+	--main-color: #0b0b0b;
+	--second-color: #ff0e0e;
+}
+
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+	width: 15px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: var(--main-color); /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--second-color); /* color of the scrollbar thumb */
+	border-radius: 5px; /* roundness of the scrollbar thumb */
+}

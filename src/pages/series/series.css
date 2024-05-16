@@ -1,0 +1,67 @@
+.series {
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px 50px 20px;
+	background-color: #222;
+}
+
+.series h1 {
+	margin-bottom: 10px;
+	color: var(--second-color);
+	font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+	.series {
+		padding: 70px 20px 20px;
+	}
+
+	.series h1 {
+		font-size: 26px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.series {
+		padding: 70px 20px 20px;
+	}
+
+	.series h1 {
+		font-size: 34px;
+	}
+}
+
+.series > p {
+	color: #ccc;
+	max-width: 600px;
+	margin-bottom: 20px;
+	text-align: justify;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.series .itemBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.series .itemBox a {
+	flex: 1;
+	min-width: 170px;
+	max-width: 230px;
+}
+
+@media (max-width: 767px) {
+	.series .itemBox a {
+		min-width: 130px;
+	}
+}
+
+.series .itemBox a .listitem {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}

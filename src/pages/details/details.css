@@ -1,0 +1,278 @@
+.details {
+	width: 100%;
+	min-height: 100vh;
+	padding: 90px 50px 20px;
+	background-color: var(--main-color);
+	color: white;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+	.details {
+		padding: 80px 30px 20px;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.details {
+		padding: 80px 30px 20px;
+	}
+}
+
+.details .detailsBox {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: 50px;
+}
+
+@media screen and (max-width: 767px) {
+	.details .detailsBox {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.details .detailsBox {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.detailsBox .imgBox {
+	flex: 1;
+	text-align: center;
+}
+
+.detailsBox .imgBox img {
+	width: 90%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 767px) {
+	.detailsBox .imgBox img {
+		width: 55%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+	.detailsBox .imgBox img {
+		width: 45%;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1279px) {
+	.detailsBox .imgBox img {
+		width: 100%;
+		height: 55%;
+	}
+}
+
+.detailsBox .infoBox {
+	width: 100%;
+	flex: 2.2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px) {
+	.detailsBox .infoBox {
+		flex: unset;
+		width: 100%;
+	}
+}
+
+.infoBox .top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 35px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.infoBox .top {
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.infoBox .top {
+		justify-content: space-between;
+	}
+}
+
+.infoBox .top .title h1 {
+	font-size: 50px;
+	color: var(--second-color);
+	margin-bottom: 15px;
+}
+
+.infoBox .top .title p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #777;
+}
+
+.infoBox .top .rate {
+	font-size: 50px;
+	font-weight: 500;
+	align-self: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+	.infoBox .top .title h1 {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+
+	.infoBox .top .title p {
+		font-size: 16px;
+	}
+
+	.infoBox .top .rate {
+		font-size: 40px;
+		font-weight: 500;
+	}
+
+	.infoBox .top .rate .star {
+		font-size: 25px !important;
+	}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+	.infoBox .top .title h1 {
+		font-size: 42px;
+		margin-bottom: 10px;
+	}
+
+	.infoBox .top .title p {
+		font-size: 18px;
+	}
+
+	.infoBox .top .rate {
+		font-size: 42px;
+		font-weight: 500;
+	}
+
+	.infoBox .top .rate .star {
+		font-size: 35px !important;
+	}
+}
+
+.infoBox .bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.infoBox .bottom .infoBar {
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.infoBox .bottom .infoBar li {
+	cursor: pointer;
+}
+
+.infoBox .bottom .overview {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	overflow: hidden;
+}
+
+.infoBox .bottom .overview p {
+	font-size: 18px;
+	max-width: 800px;
+	color: #ccc;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.bottom .overview h1 {
+	position: relative;
+	top: 30px;
+	font-size: 40px;
+	color: var(--second-color);
+	margin-bottom: 20px;
+}
+
+.infoBox .bottom .overview .similar,
+.infoBox .bottom .more,
+.infoBox .bottom .episodes {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.bottom .overview .similar .box,
+.bottom .more .box,
+.bottom .episodes .box {
+	flex: 1;
+	min-width: 245px;
+	max-width: 350px;
+	position: relative;
+	cursor: pointer;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+	.bottom .overview .similar .box,
+	.bottom .more .box,
+	.bottom .episodes .box {
+		min-width: 245px;
+		max-width: 280px;
+	}
+}
+
+.bottom .overview .similar .box img,
+.bottom .more .box img,
+.bottom .episodes .box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bottom .overview .similar .box .info,
+.bottom .more .box .info,
+.bottom .episodes .box .info {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	font-size: 20px;
+	color: #eee;
+	font-weight: 400;
+}
+
+.overview .similar .box .info .episode,
+.more .box .info .episode,
+.episodes .box .info .episode {
+	color: #888;
+}
+
+.infoBox .bottom .trailer {
+	width: 100%;
+	align-self: flex-start;
+}
+
+.infoBox .bottom .trailer .video iframe {
+	width: 100% !important;
+}
+
+.infoBox .bottom .more,
+.infoBox .bottom .episodes {
+	flex-wrap: wrap;
+}

@@ -1,0 +1,67 @@
+.movies {
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px 50px 20px;
+	background-color: #222;
+}
+
+.movies h1 {
+	margin-bottom: 10px;
+	color: var(--second-color);
+	font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+	.movies {
+		padding: 70px 20px 20px;
+	}
+
+	.movies h1 {
+		font-size: 26px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.movies {
+		padding: 70px 20px 20px;
+	}
+
+	.movies h1 {
+		font-size: 34px;
+	}
+}
+
+.movies > p {
+	color: #ccc;
+	max-width: 500px;
+	margin-bottom: 20px;
+	text-align: justify;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.movies .itemBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.movies .itemBox a {
+	flex: 1;
+	min-width: 170px;
+	max-width: 230px;
+}
+
+@media (max-width: 767px) {
+	.movies .itemBox a {
+		min-width: 130px;
+	}
+}
+
+.movies .itemBox a .listitem {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}

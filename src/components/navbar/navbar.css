@@ -1,0 +1,187 @@
+.navbar {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+	color: white;
+	font-size: 18px;
+	z-index: 999;
+	transition: all 1s;
+}
+
+.navbar.show {
+	background-color: var(--main-color);
+}
+
+.navbar .container {
+	position: relative;
+	width: 100%;
+	padding: 20px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .container {
+		padding: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar .container {
+		padding: 20px 20px 20px 30px;
+	}
+}
+
+.container .left,
+.container .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar .left span {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .left span {
+		display: none;
+	}
+
+	.navbar .left .logo {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar .left span {
+		display: none;
+	}
+
+	.navbar .left .logo,
+	.navbar .left .movies-page,
+	.navbar .left .series-page {
+		display: block;
+	}
+}
+
+.navbar .logo {
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--second-color);
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .logo {
+		font-size: 26px;
+		letter-spacing: 0px;
+	}
+}
+
+.navbar .right span,
+.navbar .right .icon,
+.navbar .right img {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .right span,
+	.navbar .right .icon {
+		display: none;
+	}
+
+	.navbar .right .search-icon {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar .right span,
+	.navbar .right .icon {
+		display: none;
+	}
+
+	.navbar .right .search-icon {
+		display: block;
+	}
+}
+
+.navbar .right .inputBox {
+	position: relative;
+	width: 400px;
+	height: 50px;
+	margin-right: 15px;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .right .inputBox {
+		width: 220px;
+		height: 35px;
+		margin-right: 10px;
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar .right .inputBox {
+		width: 300px;
+		height: 40px;
+		margin-right: 10px;
+	}
+}
+
+.navbar .right .inputBox input {
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	font-size: inherit;
+	letter-spacing: 1px;
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	outline: none;
+}
+
+.navbar .right .inputBox input::placeholder {
+	color: #ccc;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .right .inputBox input::placeholder {
+		opacity: 0;
+	}
+}
+
+.navbar .right .inputBox .icon {
+	position: absolute;
+	right: 10px;
+	top: 55%;
+	transform: translateY(-50%);
+	margin-right: 0;
+}
+
+.navbar .right .menu {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar .container .menu {
+		display: block;
+	}
+}
+
+.navbar .right img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}

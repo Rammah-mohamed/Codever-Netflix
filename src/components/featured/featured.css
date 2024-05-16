@@ -1,0 +1,166 @@
+.featured {
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.featured {
+		height: 100vh;
+		margin-bottom: 30px;
+	}
+}
+
+.featured .overlay {
+	position: absolute;
+	width: 100%;
+	height: 90vh;
+	background-color: rgb(0, 0, 0, 0.2);
+	box-shadow: 550px 0 30px 10px inset rgb(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+	.featured .overlay {
+		height: 100vh;
+	}
+}
+
+.featured > .btns {
+	display: none;
+	position: absolute;
+	left: 10px;
+	top: 70px;
+}
+
+@media screen and (max-width: 767px) {
+	.featured > .btns {
+		display: block;
+	}
+}
+
+.featured > .btns button {
+	color: white;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+.featured img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.featured .info {
+	position: absolute;
+	left: 50px;
+	top: 200px;
+	width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+	.featured .info {
+		left: 20px;
+		top: 260px;
+		width: 350px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.featured .info {
+		left: 30px;
+		top: 180px;
+		width: 400px;
+	}
+}
+
+.featured .info > div,
+.featured .info h1 {
+	margin-bottom: 20px;
+}
+
+.featured .info h1 {
+	font-size: 50px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--second-color);
+}
+
+@media screen and (max-width: 767px) {
+	.featured .info h1 {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.featured .info h1 {
+		font-size: 40px;
+	}
+}
+
+.featured .info .desc {
+	font-size: 20px;
+	line-height: 26px;
+	text-align: justify;
+	color: #eee;
+}
+
+@media screen and (max-width: 767px) {
+	.featured .info .desc {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.featured .info .desc {
+		font-size: 20px;
+	}
+}
+
+.featured .info .btns {
+	display: flex;
+	align-items: center;
+}
+
+.featured .info .btn {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	padding: 10px 14px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.featured .info .btn {
+		font-size: 14px;
+		padding: 8px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.featured .info .btn {
+		font-size: 14px;
+		padding: 8px;
+	}
+}
+
+.featured .info .play {
+	background-color: white;
+	color: var(--main-color);
+}
+
+.featured .info .deatiles {
+	background-color: #666;
+	color: white;
+}
+
+.featured .info .icon {
+	margin-right: 10px;
+}

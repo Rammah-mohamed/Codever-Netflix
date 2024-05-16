@@ -1,0 +1,17 @@
+.watch {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin: auto;
+	background-color: var(--main-color);
+}
+
+.watch .arrow {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-size: 40px;
+	z-index: 999;
+	color: white;
+	cursor: pointer;
+}
