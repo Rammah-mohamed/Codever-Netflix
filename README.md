@@ -1,8 +1,12 @@
 # Codever-Netflix
 ## Technologies: React, CSS, Material UI
 ## Overview:
-- Designed an intuitive user interface with clean navigation, attractive visuals, and consistent design elements to deliver a seamless browsing experience.
-- Leveraged React's component-based architecture to create reusable UI components and ensure the maintainability and scalability of the project.
-- Employed state management techniques such as React Context to manage application state effectively, ensuring a smooth and consistent user experience across different components.
-- Integrated third-party APIs such as the TMDb API for fetching movie and TV show data, allowing for dynamic and up-to-date content on the platform.
+- Developed a Netflix clone application using React, REST API, CSS, and Material UI.
+- Built a responsive and interactive user interface with component-based architecture.
+- Fetched and displayed movie and TV show data dynamically using REST API.
+- Utilized custom CSS and Material UI components for a modern and cohesive design.
+- Included functionalities such as movie browsing, and search.
+- Ensured smooth data fetching, fast load times, and efficient state management.
+- Designed an intuitive and engaging UI with seamless navigation and interactive elements.
+- Advanced skills in React, REST API integration, and using Material UI for consistent styling.
 - ## Live Demo: https://codever-netflix.vercel.app
